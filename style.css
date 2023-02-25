@@ -1,0 +1,511 @@
+html
+{
+	scroll-behavior: smooth;
+}
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px; 
+  /*cursor: pointer;*/
+}
+body
+{
+	font-family: 'Space Grotesk', sans-serif;
+	color: #fff;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	max-height: 100vh;
+	overflow:hidden;
+	background: #000;
+}
+.input
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.input input 
+{
+	font-family: 'Space Grotesk', sans-serif;
+	color: #fff;
+	width: 70%;
+	font-size: 16px;
+	background: #0A0A0A;
+	border-radius: 20px 0 0 20px;
+	padding: 10px 20px;
+	border:  1px solid #222;
+}
+.send-btn
+{
+	cursor: pointer;
+	display: inline-block;
+	color: #fff;
+	/*font-weight: 700;*/
+	background: #111;
+	border-radius: 0 20px 20px 0;
+	padding: 10px 20px 10px 15px;
+	margin: 0;
+	border:  1px solid #222;
+	animation: color-change 5s infinite;
+}
+.bg-img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0.7px;
+	/*background: url("https://media.newyorker.com/photos/60a5473498e3953d886a09fc/16:9/w_2560,h_1440,c_limit/Shouts-Outside.jpg") #000 center;*/
+	background-size: cover;
+	filter: blur(4px);
+}
+.park
+{
+	background: url("https://media.newyorker.com/photos/60a5473498e3953d886a09fc/16:9/w_2560,h_1440,c_limit/Shouts-Outside.jpg") #000 center;
+	background-size: cover;
+}
+.night
+{
+	background: url("https://www.estherkane.com/wp2020/wp-content/uploads/dark-night-1-768x404.jpg") #000 center;
+	background-size: cover;
+}
+.pretty
+{
+	background: url("https://www.travelandleisure.com/thmb/6hcaMTuQyRxG6hlYL0WGehKMZoc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/los-angeles-skyline-pink-sky-LAHOTELS0618-24f659fcbe5949a0a6d6d768be8f253d.jpg") #000 center;
+	background-size: cover;
+}
+.container
+{
+	/*border-radius: 50px;*/
+	position: relative;
+	/*position: absolute;
+	top: 50%;
+	margin: 0 auto;*/
+	max-width: 450px;
+	padding: 0;
+	height: 80vh;
+	max-height: 850px;
+	animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		/*opacity: 0;*/
+		transform: translateY(500px);
+	}
+
+	100% {
+		/*opacity: 1;*/
+		transform: translateY(0);
+	}
+}
+
+.inside-phone
+{
+	border: 10px solid #000;
+	border-radius: 50px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #080808;
+}
+.hand
+{
+	width: 933px;
+	height: 817px;
+	background-size: cover;
+	pointer-events: none;
+	position: absolute;
+	z-index: +2;
+	top: 30%;
+	left: 405px;
+}
+.white-drawn
+{
+	background: url("hand.png");
+}
+.black-real
+{
+	background: url("hand2.png");
+}
+.green-3d
+{
+	background: url("hand3.png");
+}
+.scrolling-content
+{
+	margin-top:110px;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+.header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: +1;
+	background: #111;
+	text-align: center;
+	width: 100%;
+	/*max-width: 700px;*/
+	padding: 15px 0;
+	border-bottom: 1px solid #222;
+}
+.dupe 
+{
+	background: transparent;
+	position: relative;
+	z-index: -1;
+	border-bottom: none;
+}
+
+.footer
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: +1;
+	background: #111;
+	text-align: center;
+	width: 100%;
+	/*max-width: 700px;*/
+	padding: 15px 0;
+	border-top: 1px solid #222;
+	/*box-shadow: 0px 0px 100px #000;*/
+}
+.clear
+{
+	clear: both;
+}
+.logo
+{
+	width:60px;
+	height: 60px;
+	border-radius: 100px;
+	overflow: hidden;
+	border: 1px solid #222;
+	background: url("pp.jpeg") center;
+	background-size: cover;
+	margin: 0 auto;
+}
+.navlinks
+{
+	float: right;
+	/*display: inline-block;*/
+}
+.copyText, .rainbowLink
+{
+	/*user-select: none;*/
+	position: relative;
+	/*text-decoration: none;*/
+	cursor: pointer;
+	color: #48DEF9;
+	/*font-weight: 700;*/
+	/*animation: color-change 5s infinite;*/
+}
+
+.text-block
+{
+	display: inline-block;
+	text-align: left;
+	padding: 15px 20px;
+}
+.video-block
+{
+	padding-bottom: 56.25%;
+}
+.text-block, .video-block
+{
+	/*box-shadow: inset 0 0  30px rgba(255, 255, 255, 0.1);*/
+	position: relative;
+	border-radius: 3px 20px 20px 20px;
+	overflow: hidden;
+	background: #111;
+	line-height: 1.45em;
+	margin: 15px 15px 0px;
+	font-size: 16px;
+}
+.timecode
+{
+	text-align: center;
+	margin: 15px auto 0;
+	font-size: 14px;
+	color: #333;
+	letter-spacing: 1px;
+}
+ video
+{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/*alt phone colors*/
+
+	/*dark*/
+
+		.dark-phone ::-webkit-scrollbar-track {
+		  background: rgba(119, 119, 119, 0.2); 
+		}
+		 
+		.dark-phone ::-webkit-scrollbar-thumb {
+		  background: #333; 
+		}
+
+		.dark-phone ::-webkit-scrollbar-thumb:hover {
+		  background: #222; 
+		}
+		.dark-phone .rainbowLink
+		{
+			color: #48DEF9;
+		}
+		.dark-phone .logo
+		{
+			border: 1px solid #222;
+		}
+		.dark-phone .header-link
+		{
+			color: #777;
+		}
+		.dark-phone .input input 
+		{
+			color: #fff;
+			background: #000;
+			border:  1px solid #222;
+		}
+		.dark-phone .send-btn
+		{
+			color: #000;
+			background: #48DEF9;
+			border:  1px solid #222;
+		}
+		.dark-phone .inside-phone
+		{
+			border: 10px solid #000;
+			background: #000;
+		}
+		.dark-phone .header
+		{
+			background: #111;
+			border-bottom: 1px solid #222;
+		}
+		.dark-phone .footer
+		{
+			background: #111;
+			border-top: 1px solid #222;
+		}
+		.dark-phone .text-block,.dark-phone  .video-block
+		{
+			background: #111;
+		}
+
+	/*pink*/
+
+		.pink-phone ::-webkit-scrollbar-track {
+		  background: #F17878; 
+		}
+		 
+		.pink-phone ::-webkit-scrollbar-thumb {
+		  background: #DD4B4B; 
+		}
+
+		.pink-phone ::-webkit-scrollbar-thumb:hover {
+		  background: #972121; 
+		}
+		.pink-phone .rainbowLink
+		{
+			color: #CB2E2E;
+		}
+		.pink-phone .logo
+		{
+			border: 1px solid #DB6C6C;
+		}
+		.pink-phone .timecode
+		{
+			color: #903A3A;
+		}
+		.pink-phone .header-link
+		{
+			color: #903A3A;
+		}
+		.pink-phone .input input 
+		{
+			color: #000;
+			background: #fff;
+			border:  1px solid #DB6C6C;
+		}
+		.pink-phone .send-btn
+		{
+			color: #CB2E2E;
+			background: #FFAEAE;
+			border:  1px solid #DB6C6C;
+		}
+		.pink-phone .inside-phone
+		{
+			border: 10px solid #FF9494;
+			background: #FF8080;
+		}
+		.pink-phone .header
+		{
+			background: #FFAEAE;
+			border-bottom: 1px solid #DB6C6C;
+		}
+		.pink-phone .footer
+		{
+			background: #FFAEAE;
+			border-top: 1px solid #DB6C6C;
+		}
+		.pink-phone .text-block,.pink-phone  .video-block
+		{
+			color: #903A3A;
+			background: #FFAEAE;
+		}
+
+	/*light*/
+
+		.light-phone ::-webkit-scrollbar-track {
+		  background: #ccc; 
+		}
+		 
+		.light-phone ::-webkit-scrollbar-thumb {
+		  background: #aaa; 
+		}
+
+		.light-phone ::-webkit-scrollbar-thumb:hover {
+		  background: #bbb; 
+		}
+		.light-phone .rainbowLink
+		{
+			color: #1F5870;
+		}
+		.light-phone .logo
+		{
+			border: 1px solid #DBDBDB;
+		}
+		.light-phone .timecode
+		{
+			color: #8A8A8A;
+		}
+		.light-phone .header-link
+		{
+			color: #8A8A8A;
+		}
+		.light-phone .input input 
+		{
+			color: #000;
+			background: #fff;
+			border:  1px solid #DBDBDB;
+		}
+		.light-phone .send-btn
+		{
+			color: #fff;
+			background: #48C3F6;
+			border:  1px solid #DBDBDB;
+		}
+		.light-phone .inside-phone
+		{
+			border: 10px solid #ddd;
+			background: #fff;
+		}
+		.light-phone .header
+		{
+			background: #EEEEEE;
+			border-bottom: 1px solid #DBDBDB;
+		}
+		.light-phone .footer
+		{
+			background: #EEEEEE;
+			border-top: 1px solid #DBDBDB;
+		}
+		.light-phone .text-block,.light-phone  .video-block
+		{
+			color: #fff;
+			background: #48C3F6;
+		}
+
+
+
+@media only screen and (max-width: 800px)
+{
+
+		body
+		{
+			display: block;
+			height: 100vh;
+		}
+		.container
+		{
+			max-width: 100%;
+			max-height: 100%;
+			height: 100vh;
+			animation: none;
+		}
+		.inside-phone
+		{
+			border: none;
+			border-radius: 0px;
+			width: 100%;
+			height: 100%;
+			background: #000;
+		}
+		.hand
+		{
+			display: none;
+		}
+		.scrolling-content
+		{
+			margin-top:110px;
+			width: 100%;
+			height: 100%;
+		}
+}
+
+@media only screen and (max-height: 800px)
+{
+
+		body
+		{
+			display: block;
+			height: 100vh;
+		}
+		.container
+		{
+			max-width: 100%;
+			max-height: 100%;
+			height: 100vh;
+			animation: none;
+		}
+		.inside-phone
+		{
+			border: none;
+			border-radius: 0px;
+			width: 100%;
+			height: 100%;
+			background: #000;
+		}
+		.hand
+		{
+			display: none;
+		}
+		.scrolling-content
+		{
+			margin-top:110px;
+			width: 100%;
+			height: 100%;
+		}
+}
