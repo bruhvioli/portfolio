@@ -15,7 +15,7 @@
 	<meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;” />
 	<meta name="viewport" content="width=device-width, user-scalable=no" />
 
-	<script>
+	<!-- <script>
         $(document).ready(function() {
             $(".copyText").on('click', function() {
                 $(".container").toggleClass("alert-active");
@@ -26,7 +26,7 @@
 
         });
         
-    </script>
+    </script> -->
 
     <script type="text/javascript">
     	$(document).ready(function(){
@@ -50,7 +50,7 @@
 
     <script type="text/javascript">
     	$(document).ready(function(){
-		    var classes = ["dark-phone", "light-phone", "dark-phone"];
+		    var classes = ["dark-phone", "light-phone"];
 
 		    $(".container").each(function(){
 		        $(this).addClass(classes[~~(Math.random()*classes.length)]);
@@ -173,7 +173,7 @@ var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
 </script>
 
-<script>
+<!-- <script>
     function copyDivToClipboard() {
         var range = document.createRange();
         range.selectNode(document.getElementById("a"));
@@ -192,7 +192,7 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         document.execCommand("copy");
         window.getSelection().removeAllRanges();// to deselect
     }
-</script>
+</script> -->
 
 </body>
 </html>
