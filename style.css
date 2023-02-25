@@ -455,13 +455,12 @@ body
 			height: 100vh;
 			animation: none;
 		}
-		.inside-phone
+		.dark-phone .inside-phone, .light-phone .inside-phone
 		{
 			border: none;
 			border-radius: 0px;
 			width: 100%;
 			height: 100%;
-			background: #000;
 		}
 		.hand
 		{
@@ -490,13 +489,12 @@ body
 			height: 100vh;
 			animation: none;
 		}
-		.inside-phone
+		.dark-phone .inside-phone, .light-phone .inside-phone
 		{
 			border: none;
 			border-radius: 0px;
 			width: 100%;
 			height: 100%;
-			background: #000;
 		}
 		.hand
 		{
