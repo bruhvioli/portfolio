@@ -68,19 +68,24 @@ body
 	background-size: cover;
 	filter: blur(4px);
 }
-.park
+.bg1
 {
-	background: url("https://media.newyorker.com/photos/60a5473498e3953d886a09fc/16:9/w_2560,h_1440,c_limit/Shouts-Outside.jpg") #000 center;
+	background: url("bg1.png") #000 center;
 	background-size: cover;
 }
-.night
+.bg2
 {
-	background: url("https://www.estherkane.com/wp2020/wp-content/uploads/dark-night-1-768x404.jpg") #000 center;
+	background: url("bg2.png") #000 center;
 	background-size: cover;
 }
-.pretty
+.bg3
 {
-	background: url("https://www.travelandleisure.com/thmb/6hcaMTuQyRxG6hlYL0WGehKMZoc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/los-angeles-skyline-pink-sky-LAHOTELS0618-24f659fcbe5949a0a6d6d768be8f253d.jpg") #000 center;
+	background: url("bg3.png") #000 center;
+	background-size: cover;
+}
+.bg4
+{
+	background: url("bg4.png") #000 center;
 	background-size: cover;
 }
 .container
