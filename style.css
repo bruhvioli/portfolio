@@ -70,22 +70,22 @@ body
 }
 .bg1
 {
-	background: url("bg1.png") #000 center;
+	background: url("bg1.PNG") #000 center;
 	background-size: cover;
 }
 .bg2
 {
-	background: url("bg2.png") #000 center;
+	background: url("bg2.PNG") #000 center;
 	background-size: cover;
 }
 .bg3
 {
-	background: url("bg3.png") #000 center;
+	background: url("bg3.PNG") #000 center;
 	background-size: cover;
 }
 .bg4
 {
-	background: url("bg4.png") #000 center;
+	background: url("bg4.PNG") #000 center;
 	background-size: cover;
 }
 .container
