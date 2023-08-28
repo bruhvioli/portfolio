@@ -81,7 +81,7 @@
 			/*font-weight: 700;*/
 			padding: 10px 20px;
 			background: #fff;
-			/*margin: 10px;*/
+			margin: 0 5px;
 			text-align: left;
 
 		}
@@ -99,17 +99,29 @@
 			color: #fff;
 			text-shadow: 0px 0px 25px #E8E8FF;
 		}
+		.cta-text
+		{
+
+		}
 		@media only screen and (max-width: 500px)
 		{
 			body{
 			display: block;
 			}
+			.cta-text{
+				order: 1;
+				width: 100%;
+			}
 			.cta{
 				flex-direction: column;
-				margin: 20px;
+				/*margin: 20px;*/
 			}
 			.cta div{
 				text-align: center;
+				margin: 5px 0;
+			}
+			.img img, .img{
+				width: 100%;
 			}
 		}
 	</style>
@@ -121,6 +133,26 @@
 
 		<div class="avatar"></div>
 		<img src="logo.png" style="width: 100%; max-width: 400px; text-align: center;">
+
+		<a href="https://store.steampowered.com/app/2492020/Rundat/" class="cta" style="color:#F6FF00;">
+			<div class="cta-text" style="background:#0026FF;"><i class="fa-brands fa-steam"></i> wishlist rundat 😍</div>
+			<div class="img" style="background:#0026FF;"><img src="steam.png"/></div>
+		</a>
+
+		<a href="https://www.twitch.tv/bruhvioli" class="cta">
+			<div class="img" style="background:#A645FF;"><img src="twitch.png"/></div>
+			<div class="cta-text" style="background:#A645FF;">🎲 join live gameshow <i class="fa-brands fa-twitch"></i></div>
+		</a>
+
+		<a href="https://www.youtube.com/bruhvioli" class="cta">
+			<div class="cta-text" style="background:#F92536;"><i class="fa-brands fa-youtube"></i> watch XL devlog 😳</div>
+			<div class="img" style="background:#F92536;"><img src="youtube.png"/></div>
+		</a>
+
+		<a href="https://discord.gg/h284WHE9gu" class="cta">
+			<div class="img" style="background:#5865F2;"><img src="discord.png"/></div>
+			<div class="cta-text" style="background:#5865F2;">🤝 join community <i class="fa-brands fa-discord"></i></div>
+		</a>
 
 		<div class="socials">
 			<!-- <a href="https://store.steampowered.com/app/2492020/Rundat/"><i class="fa-brands fa-steam"></i></a> -->
@@ -134,26 +166,6 @@
 			<a href="https://twitter.com/bruhvioli"><i class="fa-brands fa-twitter"></i></a>
 			<a href="https://instagram.com/bruhvioli"><i class="fa-brands fa-instagram"></i></a>
 		</div>
-
-		<a href="https://store.steampowered.com/app/2492020/Rundat/" class="cta" style="color:#23D1FF;">
-			<div style="background:#2A4356;">wishlist on steam <i class="fa-brands fa-steam"></i> </div>
-			<div class="img" style="background:#2A4356;"><img src="steam.png"/></div>
-		</a>
-
-		<a href="https://www.twitch.tv/bruhvioli" class="cta">
-			<div class="img" style="background:#A645FF;"><img src="twitch.png"/></div>
-			<div style="background:#A645FF;">join live gameshows <i class="fa-brands fa-twitch"></i> </div>
-		</a>
-
-		<a href="https://www.youtube.com/bruhvioli" class="cta">
-			<div style="background:#F92536;">watch big devlogs <i class="fa-brands fa-youtube"></i> </div>
-			<div class="img" style="background:#F92536;"><img src="youtube.png"/></div>
-		</a>
-
-		<a href="https://discord.gg/h284WHE9gu" class="cta">
-			<div class="img" style="background:#5865F2;"><img src="discord.png"/></div>
-			<div style="background:#5865F2;">check latest news <i class="fa-brands fa-discord"></i> </div>
-		</a>
 
 	</div>
 </body>
